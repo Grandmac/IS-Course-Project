@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IS445/545 Course Project</title>
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="header">
+    <h1>Contact Management</h1>
+    <div id="addContact" onclick="document.location.href = '/home.html'">
+        Home
+    </div>
+</header>
+
+<main>
+    <div class="loader" id="loading"></div>
+    <section id="createContainer" class="shadow">
+        <div class="row">
+            <div class="title">Name:</div>
+            <div class="data" id="name"></div>
+        </div>
+        <div class="row">
+            <div class="title">Email:</div>
+            <div class="data" id="email"></div>
+        </div>
+        <div class="row">
+            <div class="title">Phone:</div>
+            <div class="data" id="phone"></div>
+        </div>
+        <div class="actionRow">
+            <div id="edit">Edit</div>
+            <div id="delete">Delete</div>
+        </div>
+    </section>
+</main>
+
+<script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+<script src="/__/firebase/5.9.1/firebase-app.js"></script>
+<script src="/__/firebase/5.9.1/firebase-auth.js"></script>
+<script src="/__/firebase/5.9.1/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/detail.js"></script>
+</body>
